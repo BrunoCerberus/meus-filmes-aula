@@ -91,9 +91,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filme2" translatesAutoresizingMaskIntoConstraints="NO" id="RFX-Wx-mpi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="filme2" translatesAutoresizingMaskIntoConstraints="NO" id="RFX-Wx-mpi">
                                 <rect key="frame" x="16" y="64" width="343" height="351"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="351" id="1am-n5-TwT"/>
+                                    <constraint firstAttribute="width" constant="343" id="GSr-OH-hlg"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-JY-UY9">
                                 <rect key="frame" x="16" y="423" width="343" height="21"/>
@@ -111,6 +114,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RFX-Wx-mpi" firstAttribute="centerX" secondItem="TFX-F5-n2q" secondAttribute="centerX" id="gXM-Ey-ArJ"/>
+                            <constraint firstItem="RFX-Wx-mpi" firstAttribute="centerX" secondItem="TFX-F5-n2q" secondAttribute="centerX" id="piX-1h-m4r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t7C-7B-c9Z"/>
                     </view>
                     <connections>
